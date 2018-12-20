@@ -12,7 +12,7 @@ class RoomInputs: UILabel {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        print("yerrrr u cant see this")
        contentMode = .center
 //        borderStyle = .roundedRect
         font = UIFont.systemFont(ofSize: 20, weight: .heavy)
