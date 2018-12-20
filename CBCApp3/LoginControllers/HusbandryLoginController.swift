@@ -1,0 +1,261 @@
+//
+//  HusbandryLoginController.swift
+//  CBCApp3
+//
+//  Created by Martin Gallardo on 8/11/18.
+//  Copyright © 2018 Martin Gallardo. All rights reserved.
+//
+
+import UIKit
+import Alamofire
+
+class HusbandryLogInController: UIViewController {
+    
+    
+    let SignUpButton: UIButton = {
+        let sign = UIButton(type: .system)
+        let attributedString = NSMutableAttributedString(string: "Dont Have an Account?  ", attributes: [NSAttributedStringKey.font :UIFont.boldSystemFont(ofSize: 12) , NSAttributedStringKey.foregroundColor: #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)])
+        
+        attributedString.append(NSMutableAttributedString(string: "Sign up", attributes: [NSAttributedStringKey.foregroundColor :#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 14) ]))
+        
+        sign.setAttributedTitle(attributedString, for: .normal)
+        sign.addTarget(self, action: #selector(handleGetAccount), for: .touchUpInside)
+        return sign
+    }()
+    
+    let logoView: UIView = {
+        let logo = UIView()
+        logo.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+        return logo
+    }()
+    
+    let CbcLogo: UILabel = {
+        let cbc = UILabel()
+        cbc.text = "CBC"
+        cbc.textColor = .white
+        cbc.font = UIFont.boldSystemFont(ofSize: 100)
+        return cbc
+    }()
+    
+    let emailText: UITextField = {
+        let mail = UITextField()
+        mail.borderStyle = .roundedRect
+        //        mail.placeholder = "Email"
+        mail.attributedPlaceholder = NSAttributedString(string: "   Email", attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 30)])
+        mail.font = UIFont.boldSystemFont(ofSize: 30)
+        mail.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        mail.addTarget(self, action: #selector(handleInputChange), for: .editingChanged)
+        return mail
+    }()
+    
+    let floorNum: UITextField = {
+        let floor = UITextField()
+        floor.borderStyle = .roundedRect
+        //        mail.placeholder = "userName"
+        floor.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        floor.attributedPlaceholder = NSAttributedString(string: "   Floor#", attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 30)])
+        floor.font = UIFont.boldSystemFont(ofSize: 30)
+        floor.addTarget(self, action: #selector(handleInputChange), for: .editingChanged)
+        return floor
+    }()
+
+   
+
+    
+   var Manager : Alamofire.SessionManager = {
+        // Create the server trust policies
+        let serverTrustPolicies: [String: ServerTrustPolicy] = [
+            "preview2.rockefeller.edu": .disableEvaluation
+        ]
+    
+        // Create custom manager
+        let configuration = URLSessionConfiguration.default
+        configuration.httpAdditionalHeaders = Alamofire.SessionManager.defaultHTTPHeaders
+        let man = Alamofire.SessionManager(
+            configuration: URLSessionConfiguration.default,
+            serverTrustPolicyManager: ServerTrustPolicyManager(policies: serverTrustPolicies)
+        )
+        return man
+    }()
+    
+
+    
+    
+    
+    let passwordText: UITextField = {
+        let password = UITextField()
+        password.borderStyle = .roundedRect
+        password.textContentType = .password
+        
+      
+        //        mail.placeholder = "Password"
+        password.attributedPlaceholder = NSAttributedString(string: "   Password", attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 30)])
+        password.font = UIFont.boldSystemFont(ofSize: 30)
+        password.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        password.addTarget(self, action: #selector(handleInputChange), for: .editingChanged)
+        return password
+    }()
+    
+    let loginBtn: UIButton = {
+        let login = UIButton(type: .system)
+        login.setTitle("Login", for: .normal)
+        login.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+        login.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
+        login.layer.cornerRadius = 20
+        login.titleLabel?.font = UIFont.boldSystemFont(ofSize: 40)
+        login.isEnabled = false
+        login.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+        return login
+    }()
+    
+    //MARK: -HANDLE RU LOGIN
+    @objc func handleLogin() {
+        
+        guard let email = emailText.text, email.count > 0 else {return }
+        
+        guard let password = passwordText.text, password.count > 0 else { return }
+//      
+        
+        // 👇🏻Handle RU Login here👇🏻
+
+//        let url = "https://preview2.rockefeller.edu:8088/api/authenticate"
+//
+//        let secondUrl = "http://preview2.rockefeller.edu:8188/api/getprofile?token="
+//
+//
+//        let parameters: Parameters = [
+//            "ru_username":email,
+//            "ru_password":password
+//        ]
+//
+//
+//        Manager.request(url, method: .post, parameters: parameters, encoding:  URLEncoding.default).responseJSON { (responseData) in
+//            debugPrint(responseData)
+//            if let er = responseData.error {
+//                print("Failed to load:", er)
+//                return
+//            }
+//            print("yerr")
+//            guard let data = responseData.data else { return }
+//            let Json = String(data: data, encoding: .utf8)
+//            print(Json ?? "")
+//            do {
+//                let jwtResult = try JSONDecoder().decode(JwtResult.self, from: data)
+//                print("result count:\(jwtResult.token)")
+//                let headers: HTTPHeaders = [
+//                    "Authorization": "Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==",
+//                    "Accept": "application/json",
+//                    "x-access-token":"\(jwtResult.token)"
+//
+//                ]
+//                self.Manager.request(secondUrl, headers: headers).responseJSON { response in
+//                    debugPrint(response)
+//                    if let er = response.error {
+//                        print("Failed to get JWT:", er)
+//                        return
+//                    }
+//
+//
+//                        guard let jwtData = response.data else { return }
+//                        let jsonString = String(data: jwtData, encoding: .utf8)
+//
+//                        let flow = UICollectionViewFlowLayout()
+//                        let husbandryController = HusbandryFlagController(collectionViewLayout: flow)
+//
+//                        let navicon = UINavigationController(rootViewController: husbandryController)
+//                        self.present(navicon, animated: true) {
+//                            // Send Info to husbandryController
+//
+//                        }
+//                }
+//
+//
+//            } catch let err {
+//                print("failed to decode:",err)
+//            }
+//
+//        }
+//
+       
+    let flow = UICollectionViewFlowLayout()
+
+    let husbandryController = HusbandryFlagController(collectionViewLayout: flow)
+
+    let navicon = UINavigationController(rootViewController: husbandryController)
+    self.present(navicon, animated: true) {
+                                // Send Info to husbandryController
+
+        }
+
+    }
+    
+    struct JwtResult:Decodable {
+        let token: String
+       
+    }
+    
+    struct JwtInfo:Decodable {
+        let Displayname: String
+    }
+    
+    @objc func handleInputChange() {
+        let allInputValid = emailText.text?.count ?? 0 > 0 &&    passwordText.text?.count ?? 0 > 0
+        
+        if allInputValid {
+            loginBtn.isEnabled = true
+            loginBtn.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+        } else {
+            loginBtn.isEnabled = false
+            loginBtn.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+        }
+    }
+    
+    @objc func handleGetAccount() {
+        print("hello Acount")
+        //        let husbandryLoginController = HusbandryLoginController()
+        //        navigationController?.pushViewController(husbandryLoginController, animated: true)
+    }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+   
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+//        navigationController?.isToolbarHidden = true
+        navigationItem.title = "Husbandry"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleBack))
+        setipViews()
+        
+    }
+    @objc func handleBack() {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func setipViews() {
+//
+//        view.addSubview(logoView)
+//        logoView.anchor(top: view.safeAreaLayoutGuide.topAnchor, bottom: nil, left: view.leadingAnchor, right: view.trailingAnchor, topPadding: 0, bottomPadding: 0, leftPadding: 0, rightPadding: 0, width: 0, height: 200)
+//        logoView.addSubview(CbcLogo)
+//        CbcLogo.anchor(top: nil, bottom: nil, left: nil, right: nil, topPadding: 0, bottomPadding: 0, leftPadding: 0, rightPadding: 0, width: 0, height: 0 )
+//        CbcLogo.centerXAnchor.constraint(equalTo: logoView.centerXAnchor).isActive = true
+//        CbcLogo.centerYAnchor.constraint(equalTo: logoView.centerYAnchor).isActive = true
+//        CbcLogo.translatesAutoresizingMaskIntoConstraints = false
+//
+//
+        
+        let loginStack = UIStackView(arrangedSubviews: [emailText,passwordText,loginBtn])
+        loginStack.distribution = .fillEqually
+        loginStack.axis = .vertical
+        loginStack.spacing = 20
+        view.addSubview(loginStack)
+        loginStack.anchor(top: view.safeAreaLayoutGuide.topAnchor, bottom: nil, left: view.safeAreaLayoutGuide.leadingAnchor, right: view.safeAreaLayoutGuide.trailingAnchor, topPadding: 60, bottomPadding: 0, leftPadding: 60, rightPadding: 60, width: 0, height: 0)
+        
+        emailText.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        
+        view.addSubview(SignUpButton)
+        SignUpButton.anchor(top: nil, bottom: view.bottomAnchor, left: view.leadingAnchor, right: view.trailingAnchor, topPadding: 0, bottomPadding: 0, leftPadding: 0, rightPadding: 0, width: 0, height: 50)
+    }
+}
+

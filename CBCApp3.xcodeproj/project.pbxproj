@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BAA82055527A60907026607 /* Pods_CBCApp3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9431ACBA01E8FD0A9EB4C170 /* Pods_CBCApp3.framework */; };
+		5B011ED421CAA387002405CC /* TreatmentBoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B011ED321CAA387002405CC /* TreatmentBoardController.swift */; };
+		5B011ED621CAA649002405CC /* TreatMentBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B011ED521CAA649002405CC /* TreatMentBoardCell.swift */; };
+		5B03F5422180DA4A00C2DB89 /* SpeacialFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B03F5412180DA4A00C2DB89 /* SpeacialFeedCell.swift */; };
+		5B03F5442180DD5C00C2DB89 /* SurgeryCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B03F5432180DD5C00C2DB89 /* SurgeryCardCell.swift */; };
+		5B03F5462180EE6E00C2DB89 /* HazardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B03F5452180EE6E00C2DB89 /* HazardCell.swift */; };
+		5B03F5482180F59B00C2DB89 /* ShipToCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B03F5472180F59B00C2DB89 /* ShipToCell.swift */; };
+		5B04853A2151F1A500763A16 /* FloorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0485392151F1A500763A16 /* FloorController.swift */; };
+		5B04853C2151F1B800763A16 /* RoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B04853B2151F1B800763A16 /* RoomController.swift */; };
+		5B04853E2151FB6500763A16 /* RoomLogCalender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B04853D2151FB6500763A16 /* RoomLogCalender.swift */; };
+		5B06FEF62182088D0009C0A6 /* HusbandryHeaderFlagsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B06FEF52182088D0009C0A6 /* HusbandryHeaderFlagsCell.swift */; };
+		5B084F9D210FE1DE008078AF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B084F9C210FE1DE008078AF /* LoginController.swift */; };
+		5B085A7E218C7FA50095A712 /* VetServicesNonComplianteIdFrontCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B085A7D218C7FA50095A712 /* VetServicesNonComplianteIdFrontCell.swift */; };
+		5B085A80218C85390095A712 /* VetServicesInvestigatorUnknownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B085A7F218C85390095A712 /* VetServicesInvestigatorUnknownCell.swift */; };
+		5B0ADBC82188DF8400351E4F /* VetServicesOverCrowdedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ADBC72188DF8400351E4F /* VetServicesOverCrowdedCell.swift */; };
+		5B0E802121125CBB00143EA7 /* CageWashRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0E802021125CBB00143EA7 /* CageWashRequest.swift */; };
+		5B0FE61421210C0A000AAB62 /* RoomLogLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0FE61321210C0A000AAB62 /* RoomLogLogin.swift */; };
+		5B12CBD22110BFE900703F77 /* VetServicesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12CBD12110BFE900703F77 /* VetServicesController.swift */; };
+		5B12CBD42110C06B00703F77 /* VetServicesFlagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12CBD32110C06B00703F77 /* VetServicesFlagController.swift */; };
+		5B12CBD62110C1F200703F77 /* VetServicesHealthFlagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12CBD52110C1F200703F77 /* VetServicesHealthFlagCell.swift */; };
+		5B130849214B40E30096937D /* SesionManagerAlamoFire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B130848214B40E30096937D /* SesionManagerAlamoFire.swift */; };
+		5B13084B214B43350096937D /* ActionUserUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B13084A214B43350096937D /* ActionUserUpdate.swift */; };
+		5B1382D7211FC944000D35E8 /* CrendtialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1382D6211FC944000D35E8 /* CrendtialController.swift */; };
+		5B1382D9211FCFFD000D35E8 /* CrendtialCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1382D8211FCFFD000D35E8 /* CrendtialCells.swift */; };
+		5B1382DB211FDDFB000D35E8 /* HusbandryLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1382DA211FDDFB000D35E8 /* HusbandryLoginController.swift */; };
+		5B1382DD211FE2E2000D35E8 /* VetServicesLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1382DC211FE2E2000D35E8 /* VetServicesLoginController.swift */; };
+		5B1382DF211FE38A000D35E8 /* CageWashLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1382DE211FE38A000D35E8 /* CageWashLoginController.swift */; };
+		5B1382E1211FE3B7000D35E8 /* InvestigatorLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1382E0211FE3B7000D35E8 /* InvestigatorLoginController.swift */; };
+		5B1383CD210B9CCF00EDAFD7 /* HusbandryHealthCheckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1383CC210B9CCF00EDAFD7 /* HusbandryHealthCheckController.swift */; };
+		5B1383D1210BA03B00EDAFD7 /* MenuControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1383D0210BA03B00EDAFD7 /* MenuControllers.swift */; };
+		5B1595C620FD1B9200B14302 /* HusbandryMortalityFlagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1595C520FD1B9200B14302 /* HusbandryMortalityFlagCell.swift */; };
+		5B1FBFA720FACB82003E7E59 /* HusbandryOverCrowdedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FBFA620FACB82003E7E59 /* HusbandryOverCrowdedCell.swift */; };
+		5B2F09512180A67A00E02686 /* InvestigatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F09502180A67A00E02686 /* InvestigatorController.swift */; };
+		5B2F09532180A84300E02686 /* DoNotTouchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F09522180A84300E02686 /* DoNotTouchCell.swift */; };
+		5B5CCAB0210E2A4F008F4054 /* HealthCheckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5CCAAF210E2A4F008F4054 /* HealthCheckModel.swift */; };
+		5B5CCAB2210E4729008F4054 /* HusbandryTryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5CCAB1210E4729008F4054 /* HusbandryTryCell.swift */; };
+		5B5DF8EF217F5637007F8282 /* VetServicesFloodedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5DF8EE217F5637007F8282 /* VetServicesFloodedCell.swift */; };
+		5B5DF8F1217F630B007F8282 /* VetServicesCageSeparatedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5DF8F0217F630B007F8282 /* VetServicesCageSeparatedCell.swift */; };
+		5B880690216C597200DCF155 /* CalenderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88068F216C597200DCF155 /* CalenderController.swift */; };
+		5B89A1032152ABB30033A9F1 /* HealthCheckQuestionMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89A1022152ABB30033A9F1 /* HealthCheckQuestionMark.swift */; };
+		5B89A1052152ACEA0033A9F1 /* HealthQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89A1042152ACEA0033A9F1 /* HealthQuestionCell.swift */; };
+		5B89A1072152AEDE0033A9F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B89A1062152AEDE0033A9F1 /* Assets.xcassets */; };
+		5B89A1092152B2870033A9F1 /* HusbandryEmergencyFlagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B89A1082152B2870033A9F1 /* HusbandryEmergencyFlagCell.swift */; };
+		5B979EDC20F9253C00FD71A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B979EDB20F9253C00FD71A3 /* AppDelegate.swift */; };
+		5B979EDE20F9253C00FD71A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B979EDD20F9253C00FD71A3 /* ViewController.swift */; };
+		5B979EE120F9253C00FD71A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B979EDF20F9253C00FD71A3 /* Main.storyboard */; };
+		5B979EE620F9253D00FD71A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B979EE420F9253D00FD71A3 /* LaunchScreen.storyboard */; };
+		5B979EEE20F9257800FD71A3 /* husbandryFlagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B979EED20F9257800FD71A3 /* husbandryFlagController.swift */; };
+		5B979EF020F925E600FD71A3 /* HusbandryHealthCheckFlagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B979EEF20F925E600FD71A3 /* HusbandryHealthCheckFlagCell.swift */; };
+		5B979EF220F9262800FD71A3 /* View.Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B979EF120F9262800FD71A3 /* View.Extentions.swift */; };
+		5B980302218A26AC0061FB20 /* VetServicesGrosslyOverCrowdedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B980301218A26AC0061FB20 /* VetServicesGrosslyOverCrowdedCell.swift */; };
+		5BA2A59D21B6D1DC008088D7 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA2A59C21B6D1DC008088D7 /* DropDown.swift */; };
+		5BA8493F216D8EF600F69615 /* CalenderHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA8493E216D8EF600F69615 /* CalenderHeaderCell.swift */; };
+		5BA84941216D971900F69615 /* CalenderCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA84940216D971900F69615 /* CalenderCellController.swift */; };
+		5BA84943216DA01300F69615 /* DailyCalenderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA84942216DA01300F69615 /* DailyCalenderController.swift */; };
+		5BC3D103211BDC3300EDFAA6 /* VetServeciesHealthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC3D102211BDC3300EDFAA6 /* VetServeciesHealthController.swift */; };
+		5BCFBFCA214323A9008C266C /* RoomLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCFBFC9214323A9008C266C /* RoomLogController.swift */; };
+		5BCFBFCC2143396A008C266C /* DailyRoomLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCFBFCB2143396A008C266C /* DailyRoomLogCell.swift */; };
+		5BD368AE219DF74100CB3757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD368AD219DF74100CB3757 /* Assets.xcassets */; };
+		5BE7185721120D6400EA12E3 /* MenuCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7185621120D6400EA12E3 /* MenuCells.swift */; };
+		5BE7185921120ED800EA12E3 /* HusbandryRoomRequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7185821120ED800EA12E3 /* HusbandryRoomRequestController.swift */; };
+		5BE7185B211210F500EA12E3 /* RoomRequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7185A211210F500EA12E3 /* RoomRequestCell.swift */; };
+		5BFBF81721A2F2F400DE8066 /* CageWashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFBF81621A2F2F400DE8066 /* CageWashController.swift */; };
+		5BFBF81921A2FE9100DE8066 /* DirtyPushingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFBF81821A2FE9100DE8066 /* DirtyPushingCell.swift */; };
+		5BFD9306217E0942001D8707 /* HusbandryNewReceivingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD9305217E0942001D8707 /* HusbandryNewReceivingCell.swift */; };
+		5BFD9308217E0BC7001D8707 /* HusbandryLitterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD9307217E0BC7001D8707 /* HusbandryLitterCell.swift */; };
+		5BFD930A217E21B3001D8707 /* NonCompliantIdFrontCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD9309217E21B3001D8707 /* NonCompliantIdFrontCell.swift */; };
+		5BFD930C217E40FF001D8707 /* InvestigatorUnknownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD930B217E40FF001D8707 /* InvestigatorUnknownCell.swift */; };
+		5BFF74C521CBED7E00E03199 /* TreatMents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFF74C421CBED7E00E03199 /* TreatMents.swift */; };
+		5BFFEF1B21C9742F001660F4 /* TreatMentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFFEF1A21C9742F001660F4 /* TreatMentController.swift */; };
+		5BFFEF1E21C9793A001660F4 /* RoomInputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFFEF1D21C9793A001660F4 /* RoomInputs.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B011ED321CAA387002405CC /* TreatmentBoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentBoardController.swift; sourceTree = "<group>"; };
+		5B011ED521CAA649002405CC /* TreatMentBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatMentBoardCell.swift; sourceTree = "<group>"; };
+		5B03F5412180DA4A00C2DB89 /* SpeacialFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeacialFeedCell.swift; sourceTree = "<group>"; };
+		5B03F5432180DD5C00C2DB89 /* SurgeryCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeryCardCell.swift; sourceTree = "<group>"; };
+		5B03F5452180EE6E00C2DB89 /* HazardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HazardCell.swift; sourceTree = "<group>"; };
+		5B03F5472180F59B00C2DB89 /* ShipToCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipToCell.swift; sourceTree = "<group>"; };
+		5B0485392151F1A500763A16 /* FloorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorController.swift; sourceTree = "<group>"; };
+		5B04853B2151F1B800763A16 /* RoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomController.swift; sourceTree = "<group>"; };
+		5B04853D2151FB6500763A16 /* RoomLogCalender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomLogCalender.swift; sourceTree = "<group>"; };
+		5B06FEF52182088D0009C0A6 /* HusbandryHeaderFlagsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HusbandryHeaderFlagsCell.swift; sourceTree = "<group>"; };
+		5B084F9C210FE1DE008078AF /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		5B085A7D218C7FA50095A712 /* VetServicesNonComplianteIdFrontCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetServicesNonComplianteIdFrontCell.swift; sourceTree = "<group>"; };
+		5B085A7F218C85390095A712 /* VetServicesInvestigatorUnknownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetServicesInvestigatorUnknownCell.swift; sourceTree = "<group>"; };
+		5B0ADBC72188DF8400351E4F /* VetServicesOverCrowdedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetServicesOverCrowdedCell.swift; sourceTree = "<group>"; };
+		5B0E802021125CBB00143EA7 /* CageWashRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CageWashRequest.swift; sourceTree = "<group>"; };
+		5B0FE61321210C0A000AAB62 /* RoomLogLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomLogLogin.swift; sourceTree = "<group>"; };
+		5B12CBD12110BFE900703F77 /* VetServicesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetServicesController.swift; sourceTree = "<group>"; };
+		5B12CBD32110C06B00703F77 /* VetServicesFlagController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetServicesFlagController.swift; sourceTree = "<group>"; };
+		5B12CBD52110C1F200703F77 /* VetServicesHealthFlagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetServicesHealthFlagCell.swift; sourceTree = "<group>"; };
+		5B130848214B40E30096937D /* SesionManagerAlamoFire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesionManagerAlamoFire.swift; sourceTree = "<group>"; };
+		5B13084A214B43350096937D /* ActionUserUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionUserUpdate.swift; sourceTree = "<group>"; };
+		5B1382D6211FC944000D35E8 /* CrendtialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrendtialController.swift; sourceTree = "<group>"; };
+		5B1382D8211FCFFD000D35E8 /* CrendtialCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrendtialCells.swift; sourceTree = "<group>"; };
+		5B1382DA211FDDFB000D35E8 /* HusbandryLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HusbandryLoginController.swift; sourceTree = "<group>"; };
+		5B1382DC211FE2E2000D35E8 /* VetServicesLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetServicesLoginController.swift; sourceTree = "<group>"; };
+		5B1382DE211FE38A000D35E8 /* CageWashLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CageWashLoginController.swift; sourceTree = "<group>"; };
+		5B1382E0211FE3B7000D35E8 /* InvestigatorLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestigatorLoginController.swift; sourceTree = "<group>"; };
+		5B1383CC210B9CCF00EDAFD7 /* HusbandryHealthCheckController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HusbandryHealthCheckController.swift; sourceTree = "<group>"; };
+		5B1383D0210BA03B00EDAFD7 /* MenuControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuControllers.swift; sourceTree = "<group>"; };
+		5B1595C520FD1B9200B14302 /* HusbandryMortalityFlagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HusbandryMortalityFlagCell.swift; sourceTree = "<group>"; };
+		5B1FBFA620FACB82003E7E59 /* HusbandryOverCrowdedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HusbandryOverCrowdedCell.swift; sourceTree = "<group>"; };
+		5B2F09502180A67A00E02686 /* InvestigatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestigatorController.swift; sourceTree = "<group>"; };
+		5B2F09522180A84300E02686 /* DoNotTouchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoNotTouchCell.swift; sourceTree = "<group>"; };
+		5B5CCAAF210E2A4F008F4054 /* HealthCheckModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCheckModel.swift; sourceTree = "<group>"; };
+		5B5CCAB1210E4729008F4054 /* HusbandryTryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HusbandryTryCell.swift; sourceTree = "<group>"; };
+		5B5DF8EE217F5637007F8282 /* VetServicesFloodedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetServicesFloodedCell.swift; sourceTree = "<group>"; };
+		5B5DF8F0217F630B007F8282 /* VetServicesCageSeparatedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetServicesCageSeparatedCell.swift; sourceTree = "<group>"; };
+		5B88068F216C597200DCF155 /* CalenderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderController.swift; sourceTree = "<group>"; };
+		5B89A1022152ABB30033A9F1 /* HealthCheckQuestionMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCheckQuestionMark.swift; sourceTree = "<group>"; };
+		5B89A1042152ACEA0033A9F1 /* HealthQuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthQuestionCell.swift; sourceTree = "<group>"; };
+		5B89A1062152AEDE0033A9F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Documents/JTAppleCalendar/Example/JTAppleCalendar iOS Example/Assets.xcassets"; sourceTree = "<group>"; };
+		5B89A1082152B2870033A9F1 /* HusbandryEmergencyFlagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HusbandryEmergencyFlagCell.swift; sourceTree = "<group>"; };
+		5B979ED820F9253C00FD71A3 /* CBCApp3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBCApp3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B979EDB20F9253C00FD71A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B979EDD20F9253C00FD71A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B979EE020F9253C00FD71A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B979EE520F9253D00FD71A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B979EE720F9253D00FD71A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B979EED20F9257800FD71A3 /* husbandryFlagController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = husbandryFlagController.swift; sourceTree = "<group>"; };
+		5B979EEF20F925E600FD71A3 /* HusbandryHealthCheckFlagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HusbandryHealthCheckFlagCell.swift; sourceTree = "<group>"; };
+		5B979EF120F9262800FD71A3 /* View.Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.Extentions.swift; sourceTree = "<group>"; };
+		5B980301218A26AC0061FB20 /* VetServicesGrosslyOverCrowdedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetServicesGrosslyOverCrowdedCell.swift; sourceTree = "<group>"; };
+		5BA2A59C21B6D1DC008088D7 /* DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
+		5BA8493E216D8EF600F69615 /* CalenderHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderHeaderCell.swift; sourceTree = "<group>"; };
+		5BA84940216D971900F69615 /* CalenderCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderCellController.swift; sourceTree = "<group>"; };
+		5BA84942216DA01300F69615 /* DailyCalenderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCalenderController.swift; sourceTree = "<group>"; };
+		5BC3D102211BDC3300EDFAA6 /* VetServeciesHealthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetServeciesHealthController.swift; sourceTree = "<group>"; };
+		5BCFBFC9214323A9008C266C /* RoomLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomLogController.swift; sourceTree = "<group>"; };
+		5BCFBFCB2143396A008C266C /* DailyRoomLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRoomLogCell.swift; sourceTree = "<group>"; };
+		5BD368AD219DF74100CB3757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Desktop/Notification2/Notification2/Assets.xcassets; sourceTree = "<group>"; };
+		5BE7185621120D6400EA12E3 /* MenuCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCells.swift; sourceTree = "<group>"; };
+		5BE7185821120ED800EA12E3 /* HusbandryRoomRequestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HusbandryRoomRequestController.swift; sourceTree = "<group>"; };
+		5BE7185A211210F500EA12E3 /* RoomRequestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomRequestCell.swift; sourceTree = "<group>"; };
+		5BFBF81621A2F2F400DE8066 /* CageWashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CageWashController.swift; sourceTree = "<group>"; };
+		5BFBF81821A2FE9100DE8066 /* DirtyPushingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirtyPushingCell.swift; sourceTree = "<group>"; };
+		5BFD9305217E0942001D8707 /* HusbandryNewReceivingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HusbandryNewReceivingCell.swift; sourceTree = "<group>"; };
+		5BFD9307217E0BC7001D8707 /* HusbandryLitterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HusbandryLitterCell.swift; sourceTree = "<group>"; };
+		5BFD9309217E21B3001D8707 /* NonCompliantIdFrontCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonCompliantIdFrontCell.swift; sourceTree = "<group>"; };
+		5BFD930B217E40FF001D8707 /* InvestigatorUnknownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestigatorUnknownCell.swift; sourceTree = "<group>"; };
+		5BFF74C421CBED7E00E03199 /* TreatMents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatMents.swift; sourceTree = "<group>"; };
+		5BFFEF1A21C9742F001660F4 /* TreatMentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatMentController.swift; sourceTree = "<group>"; };
+		5BFFEF1D21C9793A001660F4 /* RoomInputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomInputs.swift; sourceTree = "<group>"; };
+		713635C08FB4BED0504F5924 /* Pods-CBCApp3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBCApp3.release.xcconfig"; path = "Pods/Target Support Files/Pods-CBCApp3/Pods-CBCApp3.release.xcconfig"; sourceTree = "<group>"; };
+		9431ACBA01E8FD0A9EB4C170 /* Pods_CBCApp3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBCApp3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF59C3B608C051B57B10602B /* Pods-CBCApp3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBCApp3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CBCApp3/Pods-CBCApp3.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B979ED520F9253C00FD71A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BAA82055527A60907026607 /* Pods_CBCApp3.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B084F9B210FE182008078AF /* LoginControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B084F9C210FE1DE008078AF /* LoginController.swift */,
+				5B1382DA211FDDFB000D35E8 /* HusbandryLoginController.swift */,
+				5B1382DC211FE2E2000D35E8 /* VetServicesLoginController.swift */,
+				5B1382DE211FE38A000D35E8 /* CageWashLoginController.swift */,
+				5B1382E0211FE3B7000D35E8 /* InvestigatorLoginController.swift */,
+				5B0FE61321210C0A000AAB62 /* RoomLogLogin.swift */,
+			);
+			path = LoginControllers;
+			sourceTree = "<group>";
+		};
+		5B0E801F21125C8A00143EA7 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				5BE7185821120ED800EA12E3 /* HusbandryRoomRequestController.swift */,
+				5BE7185A211210F500EA12E3 /* RoomRequestCell.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		5B12CBD02110BFBC00703F77 /* VetServices */ = {
+			isa = PBXGroup;
+			children = (
+				5BFFEF1921C97343001660F4 /* TreatMents */,
+				5B12CBD12110BFE900703F77 /* VetServicesController.swift */,
+				5B12CBD32110C06B00703F77 /* VetServicesFlagController.swift */,
+				5B12CBD52110C1F200703F77 /* VetServicesHealthFlagCell.swift */,
+				5B5DF8EE217F5637007F8282 /* VetServicesFloodedCell.swift */,
+				5B5DF8F0217F630B007F8282 /* VetServicesCageSeparatedCell.swift */,
+				5B0ADBC72188DF8400351E4F /* VetServicesOverCrowdedCell.swift */,
+				5B980301218A26AC0061FB20 /* VetServicesGrosslyOverCrowdedCell.swift */,
+				5B085A7D218C7FA50095A712 /* VetServicesNonComplianteIdFrontCell.swift */,
+				5B085A7F218C85390095A712 /* VetServicesInvestigatorUnknownCell.swift */,
+			);
+			path = VetServices;
+			sourceTree = "<group>";
+		};
+		5B1382D5211FC8A8000D35E8 /* CrendtialControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B1382D6211FC944000D35E8 /* CrendtialController.swift */,
+				5B1382D8211FCFFD000D35E8 /* CrendtialCells.swift */,
+			);
+			path = CrendtialControllers;
+			sourceTree = "<group>";
+		};
+		5B1383CE210B9D8000EDAFD7 /* HusbandryHealthControllor */ = {
+			isa = PBXGroup;
+			children = (
+				5B1383CC210B9CCF00EDAFD7 /* HusbandryHealthCheckController.swift */,
+				5B5CCAB1210E4729008F4054 /* HusbandryTryCell.swift */,
+				5B89A1062152AEDE0033A9F1 /* Assets.xcassets */,
+				5BD368AD219DF74100CB3757 /* Assets.xcassets */,
+				5B1FBFA520FACB34003E7E59 /* HusbandryFlagControllers */,
+				5B06FEF52182088D0009C0A6 /* HusbandryHeaderFlagsCell.swift */,
+			);
+			path = HusbandryHealthControllor;
+			sourceTree = "<group>";
+		};
+		5B1383CF210BA00A00EDAFD7 /* MenuController */ = {
+			isa = PBXGroup;
+			children = (
+				5B1383D0210BA03B00EDAFD7 /* MenuControllers.swift */,
+				5BE7185621120D6400EA12E3 /* MenuCells.swift */,
+			);
+			path = MenuController;
+			sourceTree = "<group>";
+		};
+		5B1FBFA520FACB34003E7E59 /* HusbandryFlagControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B979EED20F9257800FD71A3 /* husbandryFlagController.swift */,
+				5B979EEF20F925E600FD71A3 /* HusbandryHealthCheckFlagCell.swift */,
+				5B1FBFA620FACB82003E7E59 /* HusbandryOverCrowdedCell.swift */,
+				5B1595C520FD1B9200B14302 /* HusbandryMortalityFlagCell.swift */,
+				5B89A1082152B2870033A9F1 /* HusbandryEmergencyFlagCell.swift */,
+				5BFD9305217E0942001D8707 /* HusbandryNewReceivingCell.swift */,
+				5BFD9307217E0BC7001D8707 /* HusbandryLitterCell.swift */,
+				5BFD9309217E21B3001D8707 /* NonCompliantIdFrontCell.swift */,
+				5BFD930B217E40FF001D8707 /* InvestigatorUnknownCell.swift */,
+			);
+			path = HusbandryFlagControllers;
+			sourceTree = "<group>";
+		};
+		5B2F094F2180A64A00E02686 /* InvestigatorControlls */ = {
+			isa = PBXGroup;
+			children = (
+				5B2F09502180A67A00E02686 /* InvestigatorController.swift */,
+				5B2F09522180A84300E02686 /* DoNotTouchCell.swift */,
+				5B03F5412180DA4A00C2DB89 /* SpeacialFeedCell.swift */,
+				5B03F5432180DD5C00C2DB89 /* SurgeryCardCell.swift */,
+				5B03F5452180EE6E00C2DB89 /* HazardCell.swift */,
+				5B03F5472180F59B00C2DB89 /* ShipToCell.swift */,
+			);
+			path = InvestigatorControlls;
+			sourceTree = "<group>";
+		};
+		5B5CCAAE210E2A3E008F4054 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B0E801F21125C8A00143EA7 /* Request */,
+				5B5CCAAF210E2A4F008F4054 /* HealthCheckModel.swift */,
+				5B0E802021125CBB00143EA7 /* CageWashRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B89A1012152AB960033A9F1 /* HealthCheckQuestionMark */ = {
+			isa = PBXGroup;
+			children = (
+				5B89A1022152ABB30033A9F1 /* HealthCheckQuestionMark.swift */,
+				5B89A1042152ACEA0033A9F1 /* HealthQuestionCell.swift */,
+			);
+			path = HealthCheckQuestionMark;
+			sourceTree = "<group>";
+		};
+		5B979ECF20F9253B00FD71A3 = {
+			isa = PBXGroup;
+			children = (
+				5B13084A214B43350096937D /* ActionUserUpdate.swift */,
+				5B979EDA20F9253C00FD71A3 /* CBCApp3 */,
+				5B979ED920F9253C00FD71A3 /* Products */,
+				CED9B85CDBD1151868EACE9B /* Pods */,
+				F1DA21A0AE5B90D8149479D6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5B979ED920F9253C00FD71A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B979ED820F9253C00FD71A3 /* CBCApp3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B979EDA20F9253C00FD71A3 /* CBCApp3 */ = {
+			isa = PBXGroup;
+			children = (
+				5BFFEF1C21C978FA001660F4 /* Views.Extentions */,
+				5BFBF81521A2F2DB00DE8066 /* CageWashControllers */,
+				5B2F094F2180A64A00E02686 /* InvestigatorControlls */,
+				5B89A1012152AB960033A9F1 /* HealthCheckQuestionMark */,
+				5BCFBFC82143233F008C266C /* RoomLog */,
+				5B084F9B210FE182008078AF /* LoginControllers */,
+				5B1382D5211FC8A8000D35E8 /* CrendtialControllers */,
+				5BC3D101211BDC0F00EDFAA6 /* VetServicesHealth */,
+				5B12CBD02110BFBC00703F77 /* VetServices */,
+				5B5CCAAE210E2A3E008F4054 /* Models */,
+				5B1383CF210BA00A00EDAFD7 /* MenuController */,
+				5B1383CE210B9D8000EDAFD7 /* HusbandryHealthControllor */,
+				5B979EDB20F9253C00FD71A3 /* AppDelegate.swift */,
+				5B979EDD20F9253C00FD71A3 /* ViewController.swift */,
+				5B979EDF20F9253C00FD71A3 /* Main.storyboard */,
+				5B979EE420F9253D00FD71A3 /* LaunchScreen.storyboard */,
+				5B979EE720F9253D00FD71A3 /* Info.plist */,
+				5B979EF120F9262800FD71A3 /* View.Extentions.swift */,
+				5B130848214B40E30096937D /* SesionManagerAlamoFire.swift */,
+				5BA2A59C21B6D1DC008088D7 /* DropDown.swift */,
+			);
+			path = CBCApp3;
+			sourceTree = "<group>";
+		};
+		5BC3D101211BDC0F00EDFAA6 /* VetServicesHealth */ = {
+			isa = PBXGroup;
+			children = (
+				5BC3D102211BDC3300EDFAA6 /* VetServeciesHealthController.swift */,
+			);
+			path = VetServicesHealth;
+			sourceTree = "<group>";
+		};
+		5BCFBFC82143233F008C266C /* RoomLog */ = {
+			isa = PBXGroup;
+			children = (
+				5BCFBFC9214323A9008C266C /* RoomLogController.swift */,
+				5BCFBFCB2143396A008C266C /* DailyRoomLogCell.swift */,
+				5B0485392151F1A500763A16 /* FloorController.swift */,
+				5B04853B2151F1B800763A16 /* RoomController.swift */,
+				5B04853D2151FB6500763A16 /* RoomLogCalender.swift */,
+				5B88068F216C597200DCF155 /* CalenderController.swift */,
+				5BA8493E216D8EF600F69615 /* CalenderHeaderCell.swift */,
+				5BA84940216D971900F69615 /* CalenderCellController.swift */,
+				5BA84942216DA01300F69615 /* DailyCalenderController.swift */,
+			);
+			path = RoomLog;
+			sourceTree = "<group>";
+		};
+		5BFBF81521A2F2DB00DE8066 /* CageWashControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BFBF81621A2F2F400DE8066 /* CageWashController.swift */,
+				5BFBF81821A2FE9100DE8066 /* DirtyPushingCell.swift */,
+			);
+			path = CageWashControllers;
+			sourceTree = "<group>";
+		};
+		5BFFEF1921C97343001660F4 /* TreatMents */ = {
+			isa = PBXGroup;
+			children = (
+				5BFFEF1A21C9742F001660F4 /* TreatMentController.swift */,
+				5B011ED321CAA387002405CC /* TreatmentBoardController.swift */,
+				5B011ED521CAA649002405CC /* TreatMentBoardCell.swift */,
+				5BFF74C421CBED7E00E03199 /* TreatMents.swift */,
+			);
+			path = TreatMents;
+			sourceTree = "<group>";
+		};
+		5BFFEF1C21C978FA001660F4 /* Views.Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				5BFFEF1D21C9793A001660F4 /* RoomInputs.swift */,
+			);
+			path = Views.Extentions;
+			sourceTree = "<group>";
+		};
+		CED9B85CDBD1151868EACE9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF59C3B608C051B57B10602B /* Pods-CBCApp3.debug.xcconfig */,
+				713635C08FB4BED0504F5924 /* Pods-CBCApp3.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F1DA21A0AE5B90D8149479D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9431ACBA01E8FD0A9EB4C170 /* Pods_CBCApp3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B979ED720F9253C00FD71A3 /* CBCApp3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B979EEA20F9253D00FD71A3 /* Build configuration list for PBXNativeTarget "CBCApp3" */;
+			buildPhases = (
+				C952A580DBEC7C93B1ECD767 /* [CP] Check Pods Manifest.lock */,
+				5B979ED420F9253C00FD71A3 /* Sources */,
+				5B979ED520F9253C00FD71A3 /* Frameworks */,
+				5B979ED620F9253C00FD71A3 /* Resources */,
+				A7092A36880A1533CDD7F090 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CBCApp3;
+			productName = CBCApp3;
+			productReference = 5B979ED820F9253C00FD71A3 /* CBCApp3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B979ED020F9253B00FD71A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Martin Gallardo";
+				TargetAttributes = {
+					5B979ED720F9253C00FD71A3 = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 5B979ED320F9253B00FD71A3 /* Build configuration list for PBXProject "CBCApp3" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B979ECF20F9253B00FD71A3;
+			productRefGroup = 5B979ED920F9253C00FD71A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B979ED720F9253C00FD71A3 /* CBCApp3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B979ED620F9253C00FD71A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B979EE620F9253D00FD71A3 /* LaunchScreen.storyboard in Resources */,
+				5B89A1072152AEDE0033A9F1 /* Assets.xcassets in Resources */,
+				5BD368AE219DF74100CB3757 /* Assets.xcassets in Resources */,
+				5B979EE120F9253C00FD71A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7092A36880A1533CDD7F090 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CBCApp3/Pods-CBCApp3-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CBCApp3/Pods-CBCApp3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C952A580DBEC7C93B1ECD767 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CBCApp3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B979ED420F9253C00FD71A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BCFBFCC2143396A008C266C /* DailyRoomLogCell.swift in Sources */,
+				5BE7185B211210F500EA12E3 /* RoomRequestCell.swift in Sources */,
+				5B2F09532180A84300E02686 /* DoNotTouchCell.swift in Sources */,
+				5B5CCAB0210E2A4F008F4054 /* HealthCheckModel.swift in Sources */,
+				5B5DF8EF217F5637007F8282 /* VetServicesFloodedCell.swift in Sources */,
+				5B89A1092152B2870033A9F1 /* HusbandryEmergencyFlagCell.swift in Sources */,
+				5B03F5482180F59B00C2DB89 /* ShipToCell.swift in Sources */,
+				5B04853E2151FB6500763A16 /* RoomLogCalender.swift in Sources */,
+				5B12CBD42110C06B00703F77 /* VetServicesFlagController.swift in Sources */,
+				5BE7185721120D6400EA12E3 /* MenuCells.swift in Sources */,
+				5BFF74C521CBED7E00E03199 /* TreatMents.swift in Sources */,
+				5B011ED621CAA649002405CC /* TreatMentBoardCell.swift in Sources */,
+				5B1382E1211FE3B7000D35E8 /* InvestigatorLoginController.swift in Sources */,
+				5B13084B214B43350096937D /* ActionUserUpdate.swift in Sources */,
+				5B2F09512180A67A00E02686 /* InvestigatorController.swift in Sources */,
+				5B084F9D210FE1DE008078AF /* LoginController.swift in Sources */,
+				5B1382DB211FDDFB000D35E8 /* HusbandryLoginController.swift in Sources */,
+				5B1382D7211FC944000D35E8 /* CrendtialController.swift in Sources */,
+				5B5DF8F1217F630B007F8282 /* VetServicesCageSeparatedCell.swift in Sources */,
+				5B1382D9211FCFFD000D35E8 /* CrendtialCells.swift in Sources */,
+				5BCFBFCA214323A9008C266C /* RoomLogController.swift in Sources */,
+				5BFBF81721A2F2F400DE8066 /* CageWashController.swift in Sources */,
+				5BFD930C217E40FF001D8707 /* InvestigatorUnknownCell.swift in Sources */,
+				5B0FE61421210C0A000AAB62 /* RoomLogLogin.swift in Sources */,
+				5B1595C620FD1B9200B14302 /* HusbandryMortalityFlagCell.swift in Sources */,
+				5B03F5462180EE6E00C2DB89 /* HazardCell.swift in Sources */,
+				5B979EF020F925E600FD71A3 /* HusbandryHealthCheckFlagCell.swift in Sources */,
+				5BFFEF1E21C9793A001660F4 /* RoomInputs.swift in Sources */,
+				5B979EDE20F9253C00FD71A3 /* ViewController.swift in Sources */,
+				5B979EEE20F9257800FD71A3 /* husbandryFlagController.swift in Sources */,
+				5BE7185921120ED800EA12E3 /* HusbandryRoomRequestController.swift in Sources */,
+				5B085A80218C85390095A712 /* VetServicesInvestigatorUnknownCell.swift in Sources */,
+				5B1FBFA720FACB82003E7E59 /* HusbandryOverCrowdedCell.swift in Sources */,
+				5B979EDC20F9253C00FD71A3 /* AppDelegate.swift in Sources */,
+				5B89A1032152ABB30033A9F1 /* HealthCheckQuestionMark.swift in Sources */,
+				5B0ADBC82188DF8400351E4F /* VetServicesOverCrowdedCell.swift in Sources */,
+				5B12CBD22110BFE900703F77 /* VetServicesController.swift in Sources */,
+				5B1382DF211FE38A000D35E8 /* CageWashLoginController.swift in Sources */,
+				5B04853A2151F1A500763A16 /* FloorController.swift in Sources */,
+				5BA84943216DA01300F69615 /* DailyCalenderController.swift in Sources */,
+				5BFD9308217E0BC7001D8707 /* HusbandryLitterCell.swift in Sources */,
+				5B03F5422180DA4A00C2DB89 /* SpeacialFeedCell.swift in Sources */,
+				5B085A7E218C7FA50095A712 /* VetServicesNonComplianteIdFrontCell.swift in Sources */,
+				5BFFEF1B21C9742F001660F4 /* TreatMentController.swift in Sources */,
+				5B89A1052152ACEA0033A9F1 /* HealthQuestionCell.swift in Sources */,
+				5BA84941216D971900F69615 /* CalenderCellController.swift in Sources */,
+				5B130849214B40E30096937D /* SesionManagerAlamoFire.swift in Sources */,
+				5B12CBD62110C1F200703F77 /* VetServicesHealthFlagCell.swift in Sources */,
+				5BFD930A217E21B3001D8707 /* NonCompliantIdFrontCell.swift in Sources */,
+				5B04853C2151F1B800763A16 /* RoomController.swift in Sources */,
+				5BA8493F216D8EF600F69615 /* CalenderHeaderCell.swift in Sources */,
+				5B5CCAB2210E4729008F4054 /* HusbandryTryCell.swift in Sources */,
+				5BFD9306217E0942001D8707 /* HusbandryNewReceivingCell.swift in Sources */,
+				5BC3D103211BDC3300EDFAA6 /* VetServeciesHealthController.swift in Sources */,
+				5B1383D1210BA03B00EDAFD7 /* MenuControllers.swift in Sources */,
+				5B979EF220F9262800FD71A3 /* View.Extentions.swift in Sources */,
+				5B0E802121125CBB00143EA7 /* CageWashRequest.swift in Sources */,
+				5B1382DD211FE2E2000D35E8 /* VetServicesLoginController.swift in Sources */,
+				5B1383CD210B9CCF00EDAFD7 /* HusbandryHealthCheckController.swift in Sources */,
+				5B011ED421CAA387002405CC /* TreatmentBoardController.swift in Sources */,
+				5B980302218A26AC0061FB20 /* VetServicesGrosslyOverCrowdedCell.swift in Sources */,
+				5BA2A59D21B6D1DC008088D7 /* DropDown.swift in Sources */,
+				5B03F5442180DD5C00C2DB89 /* SurgeryCardCell.swift in Sources */,
+				5B880690216C597200DCF155 /* CalenderController.swift in Sources */,
+				5B06FEF62182088D0009C0A6 /* HusbandryHeaderFlagsCell.swift in Sources */,
+				5BFBF81921A2FE9100DE8066 /* DirtyPushingCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5B979EDF20F9253C00FD71A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B979EE020F9253C00FD71A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B979EE420F9253D00FD71A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B979EE520F9253D00FD71A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B979EE820F9253D00FD71A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B979EE920F9253D00FD71A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B979EEB20F9253D00FD71A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF59C3B608C051B57B10602B /* Pods-CBCApp3.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZC9C9YXV9Z;
+				INFOPLIST_FILE = CBCApp3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CoolDevelopers.CBCApp3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B979EEC20F9253D00FD71A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 713635C08FB4BED0504F5924 /* Pods-CBCApp3.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZC9C9YXV9Z;
+				INFOPLIST_FILE = CBCApp3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CoolDevelopers.CBCApp3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B979ED320F9253B00FD71A3 /* Build configuration list for PBXProject "CBCApp3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B979EE820F9253D00FD71A3 /* Debug */,
+				5B979EE920F9253D00FD71A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B979EEA20F9253D00FD71A3 /* Build configuration list for PBXNativeTarget "CBCApp3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B979EEB20F9253D00FD71A3 /* Debug */,
+				5B979EEC20F9253D00FD71A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B979ED020F9253B00FD71A3 /* Project object */;
+}
